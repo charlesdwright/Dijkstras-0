@@ -1,6 +1,6 @@
 Having been asked to solve a boilerplate interview question, and having found the testing site crashed before
 I could submit my results (that is, having somehow submitted no results; could have run out of time, 
-not sure - who watches the clock during a timed coding challenge?) I have decided to go on and solve the problem,
+not sure - who watches the clock during a timed coding challenge?), I have decided to go on and solve the problem,
 at least to provide results that satisfy what I recall the requirements to have been before the aforementioned
 crash.
 
