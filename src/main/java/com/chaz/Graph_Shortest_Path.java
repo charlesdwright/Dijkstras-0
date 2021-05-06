@@ -1,10 +1,12 @@
-package src;
+package com.chaz;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 class Graph_Shortest_Path {
     int num_Vertices=0;
@@ -76,6 +78,8 @@ class Graph_Shortest_Path {
 }
 
 class Main{
+    private static final Logger logger = LogManager.getLogger(Main.class);
+
     private static HashMap<Integer,String> theNodes = new HashMap();
     public static HashMap<Integer, String> getTheNodes() { return theNodes; }
     public static void setTheNodes(HashMap<Integer, String> theNodes) { Main.theNodes = theNodes; }

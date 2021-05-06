@@ -1,0 +1,134 @@
+2021-05-06 13:14:59.387 [main] INFO  com.chaz.Main - ...in parse_0
+2021-05-06 13:14:59.391 [main] INFO  com.chaz.Main - ...in parseNodes
+2021-05-06 13:14:59.393 [main] INFO  com.chaz.Main - A, B
+2021-05-06 13:14:59.415 [main] INFO  com.chaz.Main - src[i]: key=0 !contains A; putting A
+2021-05-06 13:14:59.416 [main] INFO  com.chaz.Main - dest[i]: key=1 !contains B; putting B
+2021-05-06 13:14:59.417 [main] INFO  com.chaz.Main - B, C
+2021-05-06 13:14:59.417 [main] INFO  com.chaz.Main - dest[i]: key=2 !contains C; putting C
+2021-05-06 13:14:59.419 [main] INFO  com.chaz.Main - A, C
+2021-05-06 13:14:59.419 [main] INFO  com.chaz.Main - B, D
+2021-05-06 13:14:59.419 [main] INFO  com.chaz.Main - dest[i]: key=3 !contains D; putting D
+2021-05-06 13:14:59.420 [main] INFO  com.chaz.Main - C, D
+2021-05-06 13:14:59.420 [main] INFO  com.chaz.Main - D, E
+2021-05-06 13:14:59.420 [main] INFO  com.chaz.Main - dest[i]: key=4 !contains E; putting E
+2021-05-06 13:14:59.420 [main] INFO  com.chaz.Main - F, G
+2021-05-06 13:14:59.420 [main] INFO  com.chaz.Main - src[i]: key=5 !contains F; putting F
+2021-05-06 13:14:59.423 [main] INFO  com.chaz.Main - dest[i]: key=6 !contains G; putting G
+2021-05-06 13:14:59.423 [main] INFO  com.chaz.Main - G, H
+2021-05-06 13:14:59.423 [main] INFO  com.chaz.Main - dest[i]: key=7 !contains H; putting H
+2021-05-06 13:14:59.425 [main] INFO  com.chaz.Main - F, H
+2021-05-06 13:14:59.425 [main] INFO  com.chaz.Main - ...in parse_0
+2021-05-06 13:14:59.425 [main] INFO  com.chaz.Main - ...in adjMatrix
+2021-05-06 13:14:59.426 [main] INFO  com.chaz.Main - i: 0
+2021-05-06 13:14:59.426 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.427 [main] INFO  com.chaz.Main - Looking for: A
+2021-05-06 13:14:59.448 [main] INFO  com.chaz.Main - Found A at index 0!
+2021-05-06 13:14:59.448 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.449 [main] INFO  com.chaz.Main - Looking for: B
+2021-05-06 13:14:59.449 [main] INFO  com.chaz.Main - Found B at index 1!
+2021-05-06 13:14:59.449 [main] INFO  com.chaz.Main - 
+Back in adjMatrix @ row 0
+2021-05-06 13:14:59.449 [main] INFO  com.chaz.Main - i: 1
+2021-05-06 13:14:59.450 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.450 [main] INFO  com.chaz.Main - Looking for: B
+2021-05-06 13:14:59.450 [main] INFO  com.chaz.Main - Found B at index 1!
+2021-05-06 13:14:59.450 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.450 [main] INFO  com.chaz.Main - Looking for: C
+2021-05-06 13:14:59.450 [main] INFO  com.chaz.Main - Found C at index 2!
+2021-05-06 13:14:59.451 [main] INFO  com.chaz.Main - 
+Back in adjMatrix @ row 1
+2021-05-06 13:14:59.451 [main] INFO  com.chaz.Main - i: 2
+2021-05-06 13:14:59.451 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.451 [main] INFO  com.chaz.Main - Looking for: A
+2021-05-06 13:14:59.451 [main] INFO  com.chaz.Main - Found A at index 0!
+2021-05-06 13:14:59.451 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.451 [main] INFO  com.chaz.Main - Looking for: C
+2021-05-06 13:14:59.452 [main] INFO  com.chaz.Main - Found C at index 2!
+2021-05-06 13:14:59.452 [main] INFO  com.chaz.Main - 
+Back in adjMatrix @ row 2
+2021-05-06 13:14:59.452 [main] INFO  com.chaz.Main - i: 3
+2021-05-06 13:14:59.452 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.452 [main] INFO  com.chaz.Main - Looking for: B
+2021-05-06 13:14:59.452 [main] INFO  com.chaz.Main - Found B at index 1!
+2021-05-06 13:14:59.453 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.453 [main] INFO  com.chaz.Main - Looking for: D
+2021-05-06 13:14:59.453 [main] INFO  com.chaz.Main - Found D at index 3!
+2021-05-06 13:14:59.453 [main] INFO  com.chaz.Main - 
+Back in adjMatrix @ row 3
+2021-05-06 13:14:59.453 [main] INFO  com.chaz.Main - i: 4
+2021-05-06 13:14:59.453 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.454 [main] INFO  com.chaz.Main - Looking for: C
+2021-05-06 13:14:59.454 [main] INFO  com.chaz.Main - Found C at index 2!
+2021-05-06 13:14:59.454 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.454 [main] INFO  com.chaz.Main - Looking for: D
+2021-05-06 13:14:59.454 [main] INFO  com.chaz.Main - Found D at index 3!
+2021-05-06 13:14:59.455 [main] INFO  com.chaz.Main - 
+Back in adjMatrix @ row 4
+2021-05-06 13:14:59.455 [main] INFO  com.chaz.Main - i: 5
+2021-05-06 13:14:59.455 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.455 [main] INFO  com.chaz.Main - Looking for: D
+2021-05-06 13:14:59.455 [main] INFO  com.chaz.Main - Found D at index 3!
+2021-05-06 13:14:59.455 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.456 [main] INFO  com.chaz.Main - Looking for: E
+2021-05-06 13:14:59.456 [main] INFO  com.chaz.Main - Found E at index 4!
+2021-05-06 13:14:59.456 [main] INFO  com.chaz.Main - 
+Back in adjMatrix @ row 5
+2021-05-06 13:14:59.456 [main] INFO  com.chaz.Main - i: 6
+2021-05-06 13:14:59.456 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.456 [main] INFO  com.chaz.Main - Looking for: F
+2021-05-06 13:14:59.457 [main] INFO  com.chaz.Main - Found F at index 5!
+2021-05-06 13:14:59.457 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.457 [main] INFO  com.chaz.Main - Looking for: G
+2021-05-06 13:14:59.457 [main] INFO  com.chaz.Main - Found G at index 6!
+2021-05-06 13:14:59.457 [main] INFO  com.chaz.Main - 
+Back in adjMatrix @ row 6
+2021-05-06 13:14:59.457 [main] INFO  com.chaz.Main - i: 7
+2021-05-06 13:14:59.458 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.458 [main] INFO  com.chaz.Main - Looking for: G
+2021-05-06 13:14:59.458 [main] INFO  com.chaz.Main - Found G at index 6!
+2021-05-06 13:14:59.458 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.458 [main] INFO  com.chaz.Main - Looking for: H
+2021-05-06 13:14:59.458 [main] INFO  com.chaz.Main - Found H at index 7!
+2021-05-06 13:14:59.459 [main] INFO  com.chaz.Main - 
+Back in adjMatrix @ row 7
+2021-05-06 13:14:59.459 [main] INFO  com.chaz.Main - i: 8
+2021-05-06 13:14:59.459 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.459 [main] INFO  com.chaz.Main - Looking for: F
+2021-05-06 13:14:59.459 [main] INFO  com.chaz.Main - Found F at index 5!
+2021-05-06 13:14:59.459 [main] INFO  com.chaz.Main - 
+...in getKeyFromValue
+2021-05-06 13:14:59.459 [main] INFO  com.chaz.Main - Looking for: H
+2021-05-06 13:14:59.460 [main] INFO  com.chaz.Main - Found H at index 7!
+2021-05-06 13:14:59.460 [main] INFO  com.chaz.Main - 
+Back in adjMatrix @ row 8
+2021-05-06 13:14:59.482 [main] INFO  com.chaz.Main - 
+=====================================================
+2021-05-06 13:14:59.483 [main] INFO  com.chaz.Main - Source 	 Destination 	 Minimum Distance from Source
+2021-05-06 13:14:59.483 [main] INFO  com.chaz.Main - =====================================================
+2021-05-06 13:14:59.492 [main] INFO  com.chaz.Main - A 			 A 					 0
+2021-05-06 13:14:59.492 [main] INFO  com.chaz.Main - A 			 B 					 1
+2021-05-06 13:14:59.492 [main] INFO  com.chaz.Main - A 			 C 					 1
+2021-05-06 13:14:59.492 [main] INFO  com.chaz.Main - A 			 D 					 2
+2021-05-06 13:14:59.493 [main] INFO  com.chaz.Main - A 			 E 					 3
+2021-05-06 13:14:59.493 [main] INFO  com.chaz.Main - A 			 F 					 Inf
+2021-05-06 13:14:59.493 [main] INFO  com.chaz.Main - A 			 G 					 Inf
+2021-05-06 13:14:59.493 [main] INFO  com.chaz.Main - A 			 H 					 Inf
+2021-05-06 13:14:59.493 [main] INFO  com.chaz.Main - =====================================================
+2021-05-06 13:14:59.493 [main] INFO  com.chaz.Main - Mmm-buh-dee-- mmm-buh-dee-- That's all, folks!
