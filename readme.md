@@ -30,12 +30,12 @@ you can imagine any kind of graph  or map or journey or network you wish, as lon
 
 But you should avoid the punctuation as we certainly haven't built the thing to handle that.
 
-A couple of other things to note: the actual shortest-distance-finding-algorithm was lifted from the web at 
-the link below.  These things are all over the place, and in the meager window of time you're given to 
-do your code challenge, nobody - but NOBODY - has a prayer of completing it if he's going to spin up an entirely 
-new version of Dijkstra's Shortest Distance Gizmo.  Besides, if you're on job interview, you won't impress anyone
-by being that intelligent.  What they want to see is that you have enough street-smarts to grab it off the web
-and somehow wire it up on the spot.
+A couple of other things to note: the actual shortest-distance-finding-algorithm was lifted from 
+https://www.softwaretestinghelp.com/java-graph-tutorial/ ) These things are all over the place, and 
+in the meager window of time you're given to do your code challenge, nobody - but NOBODY - has a prayer of 
+completing it if he's going to spin up an entirely new version of Dijkstra's Shortest Distance Gizmo.  Besides, 
+if you're on job interview, you won't impress anyone by being that intelligent.  What they want to see is that
+you have enough street-smarts to grab it off the web and somehow wire it up on the spot.
 
 That wiring-up bit, in this case, meant crafting a way to get the input -- which was given to you as a condition
 of the "challenge," into the algo and making it work.  And even that was no mean feat, even for people who
@@ -53,8 +53,8 @@ also show it another edge B,A, it will NOT assume you can get back to A from B. 
 A,B;B,A.  What do you want for nothing?
 
 Maybe later we'll make a web app out of it but honestly it's probably not worth the time considering
-all the other things on the table and really, these tests pretty much weed out anyone but monomaniacal types 
-and with all due respect to those wonderful folks a team full of them might be a little hard to manage...so don't 
-hold your breath.
+all the other things on the table and really, if you have time to sit around building the perfect implementation
+of an interview question-type problem, you're probably still living at home should let the job go to someone who
+has real bills to pay.
 
 Anyway, thanks for checking in and have fun with this little tool.  
