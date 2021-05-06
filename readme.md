@@ -37,13 +37,13 @@ if you're on a job interview, you won't impress anyone by being that intelligent
 you have enough street-smarts to grab it off the web and somehow wire it up on the spot.
 
 That wiring-up bit, in this case, meant crafting a way to get the input -- the format of which was given as a condition
-of the "challenge," into the algo and making it work.  And _that_ was no mean feat, even for people who
+of the "challenge" -- into the algo and making it work.  And _that_ was no mean feat, not even, I daresay, would it be for people who
 bother to play around with theoretical problems in their spare time.  Certainly it isn't likely that even an
 exceptional programmer could figure it out in an hour, and would you really want to hire someone who sits around 
 playing with obscure theoretical problems all day?
 
 Anyway, it took me a lot longer than that and this thing will only work if the list is entered EXACTLY as shown.
-Also, it assumes your interested in measuring the shortest distance from the first node in your list (ie Your House)
+Also, it assumes you're interested in measuring the shortest distance from the first node in your list (ie Your House)
 to all the other places on the list.  Error handlers? We'll see about that in the next release. 
 
 One more thing: I think they call this a "directional graph", in that, if you show it an edge A,B but don't 
