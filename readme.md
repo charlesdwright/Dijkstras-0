@@ -41,9 +41,8 @@ exceptional programmer could figure it out in an hour, and would you really want
 playing with obscure theoretical problems all day?
 
 Anyway, it took me a lot longer than that and this thing will only work if the list is entered EXACTLY as shown.
-Also, it assumes your interested in measuring the shortest distance from the first node in your list (ie Your House)
-to all the other places on the list.  As I said, it's an academic problem and have a dozen more of those I'm
-working on now and a few dozen real-world ones that need my attention so sue me.
+Also, it assumes you're interested in measuring the shortest distance from the first node in your list (ie Your House)
+to all the other "places" on the list.  Reordering your list is a handy workaround for that little limitation. As I said, it's an academic problem and I have a few more of those I'm working on now plus a dozen real-world ones that need my attention...as I'm sure you do, too.
 
 One more thing: I think they call this a "directional graph", in that, if you show it an edge A,B but don't 
 also show it another edge B,A, it will NOT assume you can get back to A from B.  You have to tell it that, like so:
