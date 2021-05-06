@@ -48,9 +48,6 @@ One more thing: I think they call this a "directional graph", in that, if you sh
 also show it another edge {B,A}, it will NOT assume you can get back to A from B.  You have to tell it that, like so:
 {A,B;B,A}.  What do you want for nothing?  Curly brackets really make things look scientific, don't they?
 
-Maybe later we'll make a web app out of it but honestly it's probably not worth the time considering
-all the other things on the table and really, if you have time to sit around building the perfect implementation
-of an interview question-type problem, you're probably still living at home should let the job go to someone who
-has real bills to pay.
+Maybe later we'll make a web app out of it but honestly it's probably not worth the time considering all the other things on the table.
 
 Anyway, thanks for checking in and have fun with this little tool.  
