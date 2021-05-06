@@ -21,8 +21,10 @@ trip for the graph as follows:
 your house, grandmother's house; grandmother's house, McDonald's;...etc
 
 It was actually tested on these two "graphs":
-A,B;B,C;A,C;B,D;C,D;D,E;F,G;G,H;F,H
-apple,pear; apple,orange; orange,egg; orange,banana; apple,grapefruit
+
+  A,B;B,C;A,C;B,D;C,D;D,E;F,G;G,H;F,H
+  
+  apple,pear; apple,orange; orange,egg; orange,banana; apple,grapefruit
 
 No, I don't know why anyone would want to measure the shortest distance between and apple and an egg either, but
 there was something like that given in the challenge...it had to do with animals, I think.  No worries, 
