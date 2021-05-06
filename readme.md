@@ -48,7 +48,7 @@ to all the other places on the list.  Error handlers? We'll see about that in th
 
 One more thing: I think they call this a "directional graph", in that, if you show it an edge A,B but don't 
 also show it another edge B,A, it will NOT assume you can get back to A from B.  You have to tell it that, like so:
-A,B;B,A.  What do you want for nothing?
+A,B;B,A.  Oh, and this: the graph is assumed to be "unweighted."  That means that the "cost" of travelling between any two nodes is assumed to have no effect on the shortest path between any of them.  What do you want for nothing?
 
 Maybe later we'll make a web app out of it as a way of building up those chops but we'll see.
 
