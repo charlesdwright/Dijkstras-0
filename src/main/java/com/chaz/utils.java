@@ -111,7 +111,7 @@ public class utils{
             String src=theNodes.get(srcNode);
             String dest=theNodes.get(i);
             String minDist=((pathArray[i]==2147483647) ? "Inf": String.valueOf(pathArray[i]));
-            System.out.println(src+ " \t\t\t " + dest + " \t\t\t\t\t " +  minDist);
+            System.out.println("\t" + src+ " \t\t " + dest + " \t\t\t\t " +  minDist);
         }
         System.out.println("=====================================================");
         System.out.println("Mmm-buh-dee-- mmm-buh-dee-- That's all, folks!");

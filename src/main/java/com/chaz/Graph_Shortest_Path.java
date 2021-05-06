@@ -91,32 +91,14 @@ class Main{
     public static void main(String[] args) throws IOException {
 
 
-
+System.out.println("Find the Shortest Path Between Directed Nodes in a Network");
+        System.out.println("Enter nodes as A,B;C,D;...n,m below." + "\n");
         reader();
 
+        //input eg...A,B;B,C;A,C;B,D;C,D;D,E;F,G;G,H;F,H
 
-
-
- /*       //example graph is given below
-        int graph[][] = new int[][] { { 0, 1, 1, 0, 0, 0, 0, 0},
-                { 0, 0, 1, 1, 0, 0, 0, 0},
-                { 0, 0, 0, 1, 0, 0, 0, 0},
-                { 0, 0, 0, 0, 1, 0, 0 ,0},
-                { 0, 0, 0, 0, 0, 0, 0 ,0},
-                { 0, 0, 0, 0, 0, 0, 0 ,0},
-                { 0, 0, 0, 0, 0, 0, 0 ,0},
-                { 0, 0, 0, 0, 0, 0, 0 ,0}, };
-*/
-        //A,B;B,C;A,C;B,D;C,D;D,E;F,G;G,H;F,H
-
-
-
-      //  Graph_Shortest_Path g = new Graph_Shortest_Path(graph.length);
-       // g.algo_dijkstra(graph, 0);
     }
-
-
-    public static void reader()  throws IOException {
+                public static void reader()  throws IOException {
         InputStreamReader reader = new InputStreamReader(System.in, StandardCharsets.UTF_8);
         BufferedReader in = new BufferedReader(reader);
         String line;
