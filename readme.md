@@ -52,4 +52,8 @@ One more thing: I think they call this a "directional graph", in that, if you sh
 also show it another edge B,A, it will NOT assume you can get back to A from B.  You have to tell it that, like so:
 A,B;B,A.  What do you want for nothing?
 
+Maybe later we'll make a web app out of it but honestly it's probably not worth the time considering
+all the other things on the table and really, these tests pretty much weed out anyone but idiot-savants and
+with all due respect to those wonderful folks a team full of them might be a little hard to manage...
+
 Anyway, thanks for checking in and have fun with this little tool.  
