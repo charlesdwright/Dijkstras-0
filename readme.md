@@ -27,12 +27,10 @@ It was actually tested on these two "graphs":
 
 No, I don't know why anyone would want to measure the shortest distance between and apple and an egg either, but
 there was something like that given in the challenge...it had to do with animals, I think.  No worries, 
-you can imagine any kind of graph  or map or journey or network you wish, as long as you enter in that form.
-
-But you should avoid the punctuation as we certainly haven't built the thing to handle that.
+you can imagine any kind of graph  or map or journey or network you wish, as long as you enter in that form. But you should avoid the punctuation as we certainly haven't built the thing to handle that.
 
 A couple of other things to note: the actual shortest-distance-finding-algorithm was adapted from 
-https://www.softwaretestinghelp.com/java-graph-tutorial/ ) These things are all over the place, and 
+https://www.softwaretestinghelp.com/java-graph-tutorial/. Such things are all over the place, and 
 in the meager window of time you're given to do your code challenge, nobody - but NOBODY - has a prayer of 
 completing it if he's going to spin up an entirely new version of Dijkstra's Algorithm.  Besides, 
 if you're on a job interview, you won't impress anyone by being that intelligent.  What they want to see is that
