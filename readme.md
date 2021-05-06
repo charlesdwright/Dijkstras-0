@@ -31,11 +31,8 @@ there was something like that given in the challenge...it had to do with animals
 you can imagine any kind of graph  or map or journey or network you wish, as long as you enter in that form. But you should avoid the punctuation as we certainly haven't built the thing to handle that.
 
 A couple of other things to note: the actual shortest-distance-finding-algorithm was lifted from 
-https://www.softwaretestinghelp.com/java-graph-tutorial/ ) These things are all over the place, and 
-in the meager window of time you're given to do your code challenge, nobody - but NOBODY - has a prayer of 
-completing it if he's going to spin up an entirely new version of Dijkstra's Shortest Distance Gizmo.  Besides, 
-if you're on job interview, you won't impress anyone by being that intelligent.  What they want to see is that
-you have enough street-smarts to grab it off the web and somehow wire it up on the spot.
+https://www.softwaretestinghelp.com/java-graph-tutorial/ ), one of countless such code snippets on the web. These things are all over the place, and in the meager window of time you're given to do your code challenge, nobody - but NOBODY - has a prayer of completing it if he's going to spin up an entirely new version of Dijkstra's Shortest Distance Gizmo.  Besides, if you're on job interview, you won't impress anyone by being that intelligent.  What they want to see is that you have enough street-smarts to grab it off the web and somehow wire it up on the spot.  That said, I'm glad the people at that link 
+bothered to code it up, else I would have had to and I don't know about you but I don't sit around thinking about implementations of Dijkstra's algorithm all day...at least I didn't before yesterday.
 
 That wiring-up bit, in this case, meant crafting a way to get the input -- which was given to you as a condition
 of the "challenge," into the algo and making it work.  And even that was no mean feat, even for people who
