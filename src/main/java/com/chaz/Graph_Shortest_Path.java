@@ -70,7 +70,7 @@ class Graph_Shortest_Path {
         }
 
         // print the path array 
-        printMinpath(path_array);
+        //printMinpath(path_array);
         utils.srcDestMatrix(Main.getTheNodes(), path_array,src_node);
 
     }

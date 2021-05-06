@@ -104,17 +104,17 @@ public class utils{
     }
 
     public static void srcDestMatrix(HashMap<Integer, String> theNodes, int[] pathArray, int srcNode){
-        logger.info("\n"+"=====================================================");
-        logger.info("Source \t Destination \t Minimum Distance from Source");
-        logger.info("=====================================================");
+        System.out.println("\n"+"=====================================================");
+        System.out.println("Source \t Destination \t Minimum Distance from Source");
+        System.out.println("=====================================================");
         for(int i=0;i<pathArray.length; i++){
             String src=theNodes.get(srcNode);
             String dest=theNodes.get(i);
             String minDist=((pathArray[i]==2147483647) ? "Inf": String.valueOf(pathArray[i]));
-            logger.info(src+ " \t\t\t " + dest + " \t\t\t\t\t " +  minDist);
+            System.out.println(src+ " \t\t\t " + dest + " \t\t\t\t\t " +  minDist);
         }
-        logger.info("=====================================================");
-        logger.info("Mmm-buh-dee-- mmm-buh-dee-- That's all, folks!");
+        System.out.println("=====================================================");
+        System.out.println("Mmm-buh-dee-- mmm-buh-dee-- That's all, folks!");
     }
 
     public static void checkOutSptSet(Boolean[] theSptSet){
