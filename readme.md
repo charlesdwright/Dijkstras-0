@@ -44,9 +44,9 @@ Anyway, it took me a lot longer than that and this thing will only work if the l
 Also, it assumes you're interested in measuring the shortest distance from the first node in your list (ie Your House)
 to all the other "places" on the list.  Reordering your list is a handy workaround for that little limitation. As I said, it's an academic problem and I have a few more of those I'm working on now plus a dozen real-world ones that need my attention...as I'm sure you do, too.
 
-One more thing: I think they call this a "directional graph", in that, if you show it an edge A,B but don't 
-also show it another edge B,A, it will NOT assume you can get back to A from B.  You have to tell it that, like so:
-A,B;B,A.  What do you want for nothing?
+One more thing: I think they call this a "directional graph", in that, if you show it an edge {A,B} but don't 
+also show it another edge {B,A}, it will NOT assume you can get back to A from B.  You have to tell it that, like so:
+{A,B;B,A}.  What do you want for nothing?  Curly brackets really make things look scientific, don't they?
 
 Maybe later we'll make a web app out of it but honestly it's probably not worth the time considering
 all the other things on the table and really, if you have time to sit around building the perfect implementation
