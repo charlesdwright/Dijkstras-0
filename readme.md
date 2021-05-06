@@ -20,6 +20,7 @@ trip for the graph as follows:
 `your house, grandmother's house; grandmother's house, McDonald's;...etc`
 
 It was actually tested on these two "graphs":
+
 `A,B;B,C;A,C;B,D;C,D;D,E;F,G;G,H;F,H`
 
 `apple,pear; apple,orange; orange,egg; orange,banana; apple,grapefruit`
