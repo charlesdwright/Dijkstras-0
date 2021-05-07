@@ -117,6 +117,7 @@ public class utils{
 
         logger.info("\n" + "...in getKeyFromValue");
         logger.info("Looking for: "+String.valueOf(value));
+
         for (Object o : hm.keySet()) {
             if (hm.get(o).equals(value)) {
                 logger.info("Found "+String.valueOf(hm.get(o)) + " at index " + o +"!");
