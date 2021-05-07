@@ -4,33 +4,21 @@ import org.apache.logging.log4j.LogManager;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
-public class Main {
-
-    public static void main(String[] args) {
-        logger.info("yermammy");
-        String theInput="A,B;B,C;A,C;B,D;C,D;D,E;F,G;G,H;F,H";
-//        String theInput = "apple,pear; apple,orange; orange,egg; orange,banana; apple,grapefruit";
-        String[] o = rawNodes(theInput);
-        test_rawNodes(o);
-        test_nodeParser(parseNodes(o));
-        adjMatrix(parseNodes(o),rawNodes(theInput));
-        test_adjMatrix(adjMatrix(parseNodes(o),rawNodes(theInput)));
-    }
-*/
 public class utils{
     private static final Logger logger = LogManager.getLogger(Main.class);
 
-    public static int[][] adjMatrix(HashMap parsedNodes, String[] rawNodes) {
-        //logger.info("\n"+"...in adjMatrix");
+    public static int[][] adjMatrix(HashMap parsedNodes, String[] theEdges) {
+        //build the adjacency matrix from the parsed node list and the
+        //graph description (the list of edges).
+
         logger.info("...in adjMatrix");
-        //
+
         int a[][] = new int[parsedNodes.size()][parsedNodes.size()];
 
-        for (int i = 0; i < rawNodes.length; i++) {
+        for (int i = 0; i < theEdges.length; i++) {
             logger.info("i: "+i);
-            int row = (int)getKeyFromValue(parsedNodes,rawNodes[i].split(",")[0].trim());
-            int col = (int)getKeyFromValue(parsedNodes,rawNodes[i].split(",")[1].trim());
+            int row = (int)getKeyFromValue(parsedNodes,theEdges[i].split(",")[0].trim());
+            int col = (int)getKeyFromValue(parsedNodes,theEdges[i].split(",")[1].trim());
             logger.info("\n"+"Back in adjMatrix @ row " + i);
 
             a[row][col]=1;
@@ -38,26 +26,28 @@ public class utils{
         return a;
     }
 
-    public static String[] rawNodes(String theInput) {
+    public static String[] theEdges(String theInput) {
+        //extract the edges from the input and add to a list
+
         logger.info("...in parse_0");
         String[] o = theInput.split(";");
         return o;
     }
 
-    public static HashMap<Integer, String> parseNodes(String[] theInput) {
-        //build the vector of unique nodes from a list of
-        //nodes in [source, destination] form.
+    public static HashMap<Integer, String> parseNodes(String[] edges) {
+        //build a vector of unique nodes from a list of
+        //edges (nodes in [source, destination] form).
         //used later to build the adjacency matrix.
 
-        String[] src = new String[theInput.length];
-        String[] dest = new String[theInput.length];
+        String[] src = new String[edges.length];
+        String[] dest = new String[edges.length];
 
         HashMap<Integer, String> nodes = new HashMap<Integer, String>();
         int key = nodes.size();
         logger.info("...in parseNodes");
-        for (int i = 0; i < theInput.length; i++) {
-            src[i] = theInput[i].split(",")[0].trim();
-            dest[i] = theInput[i].split(",")[1].trim();
+        for (int i = 0; i < edges.length; i++) {
+            src[i] = edges[i].split(",")[0].trim();
+            dest[i] = edges[i].split(",")[1].trim();
 
             logger.info(src[i] + ", " + dest[i]);
 
@@ -76,6 +66,7 @@ public class utils{
     }
 
     private static void test_adjMatrix(int[][] theMatrix) {
+        //check the output of the function
         logger.info("Testing adjMatrix"+"\n");
         for(int i=0;i<theMatrix.length; i++){
             for(int j=0;j<theMatrix.length; j++){
@@ -87,6 +78,7 @@ public class utils{
     }
 
     private static void test_nodeParser(HashMap theMap){
+        //check the output of the function
         logger.info("Testing nodeParser"+"\n");
         for(int i=0;i<theMap.size(); i++){
             logger.info(i+": "+theMap.get(i));
@@ -94,7 +86,8 @@ public class utils{
         logger.info("Finished testing nodeParser"+"\n");
     }
 
-    private static void test_rawNodes(String[] theInput){
+    private static void test_theEdges(String[] theInput){
+        //check the output of the function
         logger.info("Testing test_parse_0"+"\n");
         for(int i=0;i<theInput.length; i++){
             logger.info(i+": "+theInput[i]);
@@ -104,6 +97,8 @@ public class utils{
     }
 
     public static void srcDestMatrix(HashMap<Integer, String> theNodes, int[] pathArray, int srcNode){
+        //format and output results to console.
+
         System.out.println("\n"+"=====================================================");
         System.out.println("Source \t Destination \t Minimum Distance from Source");
         System.out.println("=====================================================");
@@ -117,21 +112,11 @@ public class utils{
         System.out.println("Mmm-buh-dee-- mmm-buh-dee-- That's all, folks!");
     }
 
-    public static void checkOutSptSet(Boolean[] theSptSet){
-        logger.info("Testing sptSet"+"\n");
-        for(int i=0;i<theSptSet.length; i++){
-            logger.info(i+": "+theSptSet[i]);
-
-        }
-        logger.info("Finished testing test_parse_0"+"\n");
-    }
-
     private static Object getKeyFromValue(Map hm, Object value) {
-
+        //someone wrote a handy routine to do this...
         logger.info("\n" + "...in getKeyFromValue");
         logger.info("Looking for: "+String.valueOf(value));
         for (Object o : hm.keySet()) {
-            //logger.info(String.valueOf(value) + ",  " + hm.get(o));
             if (hm.get(o).equals(value)) {
                 logger.info("Found "+String.valueOf(hm.get(o)) + " at index " + o +"!");
                 return o;
@@ -139,14 +124,4 @@ public class utils{
         }
         return null;
     }
-
-
-
-    public static int charOrdinal(String x){
-        char ch = x.toLowerCase().charAt(0);
-        int pos = ch - 'a';// + 1;
-        return pos;
-    }
-
-
 }

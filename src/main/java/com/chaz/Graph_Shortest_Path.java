@@ -1,3 +1,5 @@
+//thanks to https://www.softwaretestinghelp.com/java-graph-tutorial/
+
 package com.chaz;
 
 import java.io.BufferedReader;
@@ -89,16 +91,14 @@ class Main{
     public static void setRawNodes(String[] rawNodes) { Main.rawNodes = rawNodes; }
 
     public static void main(String[] args) throws IOException {
+        //start up and look for input eg...A,B;B,C;A,C;B,D;C,D;D,E;F,G;G,H;F,H
 
-
-System.out.println("Find the Shortest Path Between Directed Nodes in a Network");
+        System.out.println("Find the Shortest Path Between Directed Nodes in a Network");
         System.out.println("Enter nodes as A,B;C,D;...n,m below." + "\n");
         reader();
-
-        //input eg...A,B;B,C;A,C;B,D;C,D;D,E;F,G;G,H;F,H
-
     }
-                public static void reader()  throws IOException {
+
+    public static void reader()  throws IOException {
         InputStreamReader reader = new InputStreamReader(System.in, StandardCharsets.UTF_8);
         BufferedReader in = new BufferedReader(reader);
         String line;
@@ -108,8 +108,8 @@ System.out.println("Find the Shortest Path Between Directed Nodes in a Network")
             if (line.length() == 1) {
                 String Vs = line;
             } else {
-                setTheNodes(utils.parseNodes(utils.rawNodes(line)));
-                setRawNodes(utils.rawNodes(line));
+                setTheNodes(utils.parseNodes(utils.theEdges(line)));
+                setRawNodes(utils.theEdges(line));
 
                 //create adjacency matrix
                 int[][] adjMatrix= utils.adjMatrix(theNodes,rawNodes);
