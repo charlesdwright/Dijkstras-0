@@ -113,7 +113,8 @@ public class utils{
     }
 
     private static Object getKeyFromValue(Map hm, Object value) {
-        //someone wrote a handy routine to do this...
+        //https://stackoverflow.com/a/27999980
+
         logger.info("\n" + "...in getKeyFromValue");
         logger.info("Looking for: "+String.valueOf(value));
         for (Object o : hm.keySet()) {
