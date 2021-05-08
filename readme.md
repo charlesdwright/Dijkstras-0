@@ -1,3 +1,13 @@
+**Executive Summary**
+
+Coding Challenge to find shortest path from a point to any point in a list required a dig into and implementation of Dijktra's Algorithm.  
+
+**Original Contribution** 
+1. Accepts input in the form of "v1,v2; ...;v_n,v_m" where v is any string.
+2. Algo to create Adjacency Matrix.
+
+**Discussion**
+
 Having been asked to solve a boilerplate interview question, and having found the testing site crashed before
 I could submit my results (that is, having somehow submitted no results; could have run out of time, 
 not sure - who watches the clock during a timed coding challenge?), I have decided to go on and solve the problem,
